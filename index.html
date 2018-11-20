@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Compressed images</title>
+  <script type="text/javascript">
+           var loadTime = window.performance.timing.domContentLoadedEventEnd- window.performance.timing.navigationStart;
+        </script>
+
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+div.gallery a {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+     background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+
+    float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<!--
+<script type="text/javascript">
+var importantStuff = window.open('', '_blank');
+importantStuff.document.write('Loading preview...');
+importantStuff.location.href = 'index.html';
+
+</script>
+-->
+
+<div class="main">
+<h1>Image Compression</h1>
+<hr>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="compressed_1.png">
+      <img src="compressed_1.png"  width="600" height="400">
+    </a>
+    <div class="desc"><h3>Image:1</h3></div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="compressed_2.png">
+      <img src="compressed_2.png"  width="600" height="400">
+    </a>
+    <div class="desc"><h3>Image:2</h3></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="compressed_3.png">
+      <img src="compressed_3.png"  width="600" height="400">
+    </a>
+    <div class="desc"><h3>Image:3</h3></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="compressed_4.png">
+      <img src="compressed_4.png"  width="600" height="400">
+    </a>
+    <div class="desc"><h3>Image:4</h3></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="compressed_5.png">
+      <img src="compressed_5.png"  width="600" height="400">
+    </a>
+    <div class="desc"><h3>Image:5</h3></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="compressed_6.png">
+      <img src="compressed_6.png"  width="600" height="400">
+    </a>
+    <div class="desc"><h3>Image:6</h3></div>
+  </div>
+</div>
+</div>
+ <script type="text/javascript">
+        window.onload = function () {
+    var loadTime = ((window.performance.timing.domComplete- window.performance.timing.navigationStart)/1000)+" sec.";
+   console.log('Page load time is '+ loadTime);
+}
+        </script>
+
+</body>
+</html>
